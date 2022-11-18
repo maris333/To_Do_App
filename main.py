@@ -1,4 +1,4 @@
-def to_do_list():
+def create_to_do_list():
     return []
 
 
@@ -15,15 +15,16 @@ def update_entry(to_do_list, item):
 
 
 def display_list(to_do_list):
-    pass
+    for item in to_do_list:
+        print(item)
 
 
 if __name__ == '__main__':
-    my_list = to_do_list()
+    my_list = create_to_do_list()
     add_to_list(my_list, "item1")
     add_to_list(my_list, "item2")
-    for item in my_list:
-        print(item)
+    display_list(my_list)
+
 
 
 
